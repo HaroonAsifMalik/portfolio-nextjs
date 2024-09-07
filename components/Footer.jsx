@@ -37,17 +37,17 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-zinc-50 dark:bg-neutral-700 text-surface/75 dark:text-white/75">
+    <footer className="bg-white dark:bg-dark_bg text-surface/75 dark:text-white/75">
       <div className="container mx-auto py-4 px-6">
         {/* Social Links Section */}
         <div className="flex justify-center mb-4 space-x-4">
-          <SocialLink href="https://github.com/HaroonAsifMalik" icon={<FaGithub size={30} className="text-white " />} />
-          <SocialLink href="https://instagram.com" icon={<FaInstagram size={30} className="text-white " />} />
-          <SocialLink href="https://linkedin.com" icon={<CiLinkedin size={30} className="text-white " />} />
-          <SocialLink href="https://google.com" icon={<FaGoogle size={30} className="text-white " />} />
-          <SocialLink href="https://leetcode.com" icon={<TbBrandLeetcode size={30} className="text-white " />} />
+          <SocialLink href="https://github.com/HaroonAsifMalik" icon={<FaGithub size={30} />} />
+          <SocialLink href="https://instagram.com" icon={<FaInstagram size={30}  />} />
+          <SocialLink href="https://linkedin.com" icon={<CiLinkedin size={30}  />} />
+          <SocialLink href="https://google.com" icon={<FaGoogle size={30}  />} />
+          <SocialLink href="https://leetcode.com" icon={<TbBrandLeetcode size={30}  />} />
         </div>
-        <hr className="border-t-2 border-white dark:border-neutral-500 my-4" />
+        <hr className="border-t-2 border-white dark:border-secondary my-4" />
 
         {/* Footer Content Section */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-center md:text-left">
@@ -63,7 +63,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {techStackItems.map((item, index) => (
                 <li key={index}>
-                  <a href={item.href} className="hover:text-purple-700 text-neutral-600 dark:text-white/75">
+                  <a href={item.href} className="block text-neutral-600 dark:text-white/75 hover:text-secondary transition-transform duration-300 ease-in-out transform translate-y-0 hover:translate-y-[-4px]">
                     {item.text}
                   </a>
                 </li>
@@ -76,7 +76,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {projectTypesItems.map((item, index) => (
                 <li key={index}>
-                  <a href={item.href} className="hover:text-purple-700 text-neutral-600 dark:text-white/75">
+                  <a href={item.href} className="block text-neutral-600 dark:text-white/75 hover:text-secondary transition-transform duration-300 ease-in-out transform translate-y-0 hover:translate-y-[-4px]">
                     {item.text}
                   </a>
                 </li>
@@ -101,7 +101,7 @@ const Footer = () => {
               </li>
               {aboutMeItems.map((item, index) => (
                 <li key={index}>
-                  <a href={item.href} className="hover:text-purple-700 text-neutral-600 dark:text-white/75">
+                  <a href={item.href} className="block text-neutral-600 dark:text-white/75 hover:text-secondary transition-transform duration-300 ease-in-out transform translate-y-0 hover:translate-y-[-4px]">
                     {item.text}
                   </a>
                 </li>
@@ -112,7 +112,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom Section */}
-      <div className="bg-neutral-200 dark:bg-neutral-700 py-4 text-center">
+      <div className="bg-neutral-200 dark:bg-dark_bg py-4 text-center">
         <span className="text-neutral-600 dark:text-white/75">© 2023 Copyright:</span>
         <a href="https://tailwind-elements.com/" className="font-semibold text-neutral-800 dark:text-white ml-1">
         </a>

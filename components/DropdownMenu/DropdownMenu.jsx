@@ -1,18 +1,18 @@
-import { MdKeyboardArrowDown,MdKeyboardArrowUp } from "react-icons/md";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 import Link from "next/link";
 const DropdownMenu = ({ buttonText, items, width = 'w-48' }) => (
     <div className="relative group">
-      <button className="text-gray-700 hover:text-purple-700 flex items-center">
+      <button className="text-white flex items-center">
         {buttonText}
         <MdKeyboardArrowDown className="ml-2" />
       </button>
-      <div className={`absolute hidden group-hover:block bg-white shadow-md mt-2 rounded ${width}`}>
+      <div className={`absolute hidden group-hover:block bg-primary_dark shadow-md mt-2 rounded-md ${width}`}>
         {items.map((item, index) => (
           <Link
             key={index}
             href={item.href}
-            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 whitespace-nowrap"
+            className="block px-4 py-2 text-white hover:bg-primary whitespace-nowrap"
           >
             {item.text}
           </Link>
@@ -21,4 +21,4 @@ const DropdownMenu = ({ buttonText, items, width = 'w-48' }) => (
     </div>
   );
 
-  export default DropdownMenu
+export default DropdownMenu
