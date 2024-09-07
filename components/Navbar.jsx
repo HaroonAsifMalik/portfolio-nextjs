@@ -2,17 +2,17 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoCallOutline } from "react-icons/io5";
-import { MdKeyboardArrowDown,MdKeyboardArrowUp } from "react-icons/md";
-import DropdownMenu from "./DropdownMenu/DropdownMenu"
-import NavbarLink from "./Links/NavbarLink"
-import SocialLink from './Links/SocialLink'
+import DropdownMenu from "./DropdownMenu/DropdownMenu";
+import NavbarLink from "./Links/NavbarLink";
+import SocialLink from "./Links/SocialLink";
 
 const Navbar = () => {
-  const servicesMenuItems = [
-    { href: "/service1", text: "Service 1" },
-    { href: "/service2", text: "Service 2" },
-    { href: "/service3", text: "Service 3" },
-    { href: "/service4", text: "Service 4" }
+  const aboutMeItems = [
+    { href: "/", text: "Blog" },
+    { href: "/", text: "Contact me" },
+    { href: "/", text: "Portfolio" },
+    { href: "/", text: "Tech Stack" },
+    { href: "/", text: "FAQs" },
   ];
 
   const techStackItems = [
@@ -22,7 +22,7 @@ const Navbar = () => {
     { href: "/", text: "Next Development" },
     { href: "/", text: "Angular Development" },
     { href: "/", text: "Flutter Development" },
-    { href: "/", text: "REST API Development" }
+    { href: "/", text: "REST API Development" },
   ];
 
   const projectTypesItems = [
@@ -34,7 +34,7 @@ const Navbar = () => {
     { href: "/", text: "Front-end Design" },
     { href: "/", text: "Full-stack Projects" },
     { href: "/", text: "Open Source Contributions" },
-    { href: "/", text: "Mobile/Web Integrations" }
+    { href: "/", text: "Mobile/Web Integrations" },
   ];
 
   return (
@@ -65,21 +65,32 @@ const Navbar = () => {
                 width="w-64"
               />
               <NavbarLink href="/">Tech Stack</NavbarLink>
-              <NavbarLink href="/">Case Studies</NavbarLink>
-              <NavbarLink href="/">Resource</NavbarLink>
               <DropdownMenu
+                buttonText="About Me"
+                items={aboutMeItems}
+                width="w-64"
+              />
+              <NavbarLink href="/">Resume</NavbarLink>
+              {/* <NavbarLink href="/">Resource</NavbarLink> */}
+              {/* <DropdownMenu
                 buttonText="Services"
                 items={servicesMenuItems}
                 width="w-screen"
-              />
+              /> */}
             </div>
           </div>
 
           {/* Right Side */}
           <div className="flex items-center space-x-6">
             {/* Social Links */}
-            <SocialLink href="https://github.com" icon={<FaGithub size={20} />} />
-            <SocialLink href="https://linkedin.com" icon={<FaLinkedin size={20} />} />
+            <SocialLink
+              href="https://github.com/HaroonAsifMalik"
+              icon={<FaGithub size={20} />}
+            />
+            <SocialLink
+              href="https://www.linkedin.com/in/haroon-asif-malik/"
+              icon={<FaLinkedin size={20} />}
+            />
 
             {/* Contact Us Button */}
             <Link
