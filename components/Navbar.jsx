@@ -38,7 +38,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white border-b shadow-sm">
+    <nav className="bg-primary border-b shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
@@ -95,7 +95,7 @@ const Navbar = () => {
             {/* Contact Us Button */}
             <Link
               href="/contact"
-              className="flex items-center space-x-2 border border-purple-700 text-purple-700 px-6 py-2 rounded hover:bg-purple-700 hover:text-white transition duration-300"
+              className="flex items-center space-x-2 border border-secondary text-secondary px-6 py-2 rounded hover:bg-secondary hover:text-primary transitio duration-300"
             >
               <span>Book 15 min call</span>
               <IoCallOutline />
