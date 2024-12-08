@@ -1,13 +1,13 @@
-// import Feed from "@components/feed"
+import HeroSection from '@components/Hero'
+import Technologies from '@components/Technologies'
+const Main = () => {
+  
+  return (
+    <section>
+        <HeroSection/>
+        <Technologies/>
+    </section>
 
-const Home = () => {
-    return (
-        <section className=" w-full flex-col flex-center">
-            
-            Hello
-
-        </section>
     )
-}
-
-export default Home
+};
+export default Main;

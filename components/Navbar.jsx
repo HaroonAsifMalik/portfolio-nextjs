@@ -38,8 +38,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-primary border-b shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-primary border-b shadow-sm ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex items-center space-x-4">
@@ -64,7 +64,7 @@ const Navbar = () => {
                 items={projectTypesItems}
                 width="w-64"
               />
-              <NavbarLink href="/">Tech Stack</NavbarLink>
+              <NavbarLink href="/techstack">Tech Stack</NavbarLink>
               <DropdownMenu
                 buttonText="About Me"
                 items={aboutMeItems}
