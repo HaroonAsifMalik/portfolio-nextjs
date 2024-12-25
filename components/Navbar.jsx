@@ -5,38 +5,11 @@ import { IoCallOutline } from "react-icons/io5";
 import DropdownMenu from "./DropdownMenu/DropdownMenu";
 import NavbarLink from "./Links/NavbarLink";
 import SocialLink from "./Links/SocialLink";
+import aboutMeItems from "@data/aboutMeItems";
+import techStackItems from "@data/techStackItems";
+import projectTypesItems from "@data/projectTypesItems";
 
 const Navbar = () => {
-  const aboutMeItems = [
-    { href: "/", text: "Blog" },
-    { href: "/", text: "Contact me" },
-    { href: "/", text: "Portfolio" },
-    { href: "/", text: "Tech Stack" },
-    { href: "/", text: "FAQs" },
-  ];
-
-  const techStackItems = [
-    { href: "/", text: "Python Development" },
-    { href: "/", text: "Django Development" },
-    { href: "/", text: "React Development" },
-    { href: "/", text: "Next Development" },
-    { href: "/", text: "Angular Development" },
-    { href: "/", text: "Flutter Development" },
-    { href: "/", text: "REST API Development" },
-  ];
-
-  const projectTypesItems = [
-    { href: "/", text: "E-commerce" },
-    { href: "/", text: "AI and Chatbots" },
-    { href: "/", text: "Cybersecurity Solutions" },
-    { href: "/", text: "Web Applications" },
-    { href: "/", text: "API Development" },
-    { href: "/", text: "Front-end Design" },
-    { href: "/", text: "Full-stack Projects" },
-    { href: "/", text: "Open Source Contributions" },
-    { href: "/", text: "Mobile/Web Integrations" },
-  ];
-
   return (
     <nav className="bg-primary border-b shadow-sm ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">

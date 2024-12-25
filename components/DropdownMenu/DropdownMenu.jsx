@@ -7,7 +7,7 @@ const DropdownMenu = ({ buttonText, items, width = 'w-48' }) => (
         {buttonText}
         <MdKeyboardArrowDown className="ml-2" />
       </button>
-      <div className={`absolute hidden group-hover:block bg-primary_dark shadow-md mt-2 rounded-md ${width}`}>
+      <div className={`absolute hidden group-hover:block bg-primary_dark shadow-md mt-2 z-20 rounded-md ${width}`}>
         {items.map((item, index) => (
           <Link
             key={index}

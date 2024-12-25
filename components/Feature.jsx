@@ -4,6 +4,8 @@ import Button from "./Buttons/Button";
 
 const Feature = ({ textFirst = true, textContent, imageSrc }) => {
   return (
+    <section>
+
     <div className="flex flex-col md:flex-row items-center justify-between py-16 bg-primary">
       {textFirst ? (
         <>
@@ -11,12 +13,13 @@ const Feature = ({ textFirst = true, textContent, imageSrc }) => {
           <ImageSection imageSrc={imageSrc} />
         </>
       ) : (
-          <>
+        <>
           <ImageSection imageSrc={imageSrc} />
           <TextSection textContent={textContent} />
         </>
       )}
     </div>
+      </section>
   );
 };
 
