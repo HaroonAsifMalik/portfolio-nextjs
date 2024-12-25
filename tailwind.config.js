@@ -14,6 +14,7 @@ module.exports = {
       colors: {
         'primary': '#373598', 
         'primary_dark':'#2e2c82',
+        'background':'#F2F6FF', 
         'secondary': '#FEE36E',
         'secondary_hover': '#CEB92C',
         'dark_bg': '#2A2A2A',
